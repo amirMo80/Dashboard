@@ -1,0 +1,50 @@
+@font-face {
+  font-family: IRANSans-Regular;
+  src: url("../Fonts/IRANSansXFaNum-Regular.eot") format("eot"),
+    url("../Fonts/IRANSansXFaNum-Regular.ttf") format("ttf"),
+    url("../Fonts/IRANSansXFaNum-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANSans-Bold;
+  src: url("../Fonts/IRANSansXFaNum-Bold.eot") format("eot"),
+    url("../Fonts/IRANSansXFaNum-Bold.ttf") format("ttf"),
+    url("../Fonts/IRANSansXFaNum-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANSans-DemiBold;
+  src: url("../Fonts/IRANSansXFaNum-DemiBold.eot") format("eot"),
+    url("../Fonts/IRANSansXFaNum-DemiBold.ttf") format("ttf"),
+    url("../Fonts/IRANSansXFaNum-DemiBold.woff") format("woff");
+}
+
+.activeDots {
+  opacity: 1 !important;
+}
+
+.activeTips {
+  display: block !important;
+  animation: tipsAnimate 0.6s ease-in-out;
+}
+
+@keyframes tipsAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.activeCard {
+  transform: translateX(0px) !important;
+  opacity: 1 !important;
+  transition: all 0.6s ease-in-out;
+}
+
+.activeBox {
+  border: 2px solid #6366F1!important;
+}
